@@ -18,6 +18,19 @@ body {
     flex-direction: column;
 }
 
+button {
+    cursor: pointer;
+    border-radius: var(--br);
+    box-shadow: 1px 1px 3px grey;
+}
+
+button:active {
+    transform: scale(98%);
+    box-shadow: none;
+    color: white;
+}
+
+
 /* styles for the header and footer sections */
 header, footer {
     background-color: var(--old-burgundy);
@@ -45,4 +58,52 @@ header h1 {
 
 header h1 span {
     font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+header h1 span:hover {
+    transform: scale(95%);
+}
+
+header h1 span:active {
+    transform: rotate(180deg)
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > * {
+    margin: 1rem 0.5rem;
+    padding: 8px;
+    border: 2px solid var(--steel-teal);
+    border-radius: var(--br);
+    background-color: white;
+    outline: none;
+}
+
+form > *:hover {
+    border-color: var(--medium-carmine);
+}
+
+form  input[name="task-name"] {
+    flex-basis: 50%;
+    margin-left: 0;
+}
+
+form  input[name="task-type"] {
+    flex-basis: 30%;
+}
+
+form input:focus {
+    border-color: var(--steel-teal);
+}
+
+form button {
+    margin-right: 0;
+    flex-basis: cal(20% - 2rem);
+    background-color: var(--old-burgundy);
+    color: var(--steel-teal);
 }
