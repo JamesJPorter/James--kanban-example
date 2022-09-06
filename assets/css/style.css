@@ -1,0 +1,48 @@
+:root {
+  --sandy-brown: #fcaa67ff;
+  --medium-carmine: #b0413eff;
+  --cream: #ffffc7ff;
+  --steel-teal: #548687ff;
+  --old-burgundy: #473335ff;
+  --br: 5px;
+}
+
+/* general styles */
+
+body {
+    font-family: "open-sans", sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--sandy-brown);
+    color: var(--old-burgundy);
+    display: flex;
+    flex-direction: column;
+}
+
+/* styles for the header and footer sections */
+header, footer {
+    background-color: var(--old-burgundy);
+    color: var(--cream);
+    padding: 2rem;
+}
+
+header {
+    border-bottom: 4px solid var(--medium-carmine);
+}
+
+footer {
+    border-top: 4px solid var(--medium-carmine);
+}
+
+header h1 {
+    font-size: 4.5rem;
+    color: var(--steel-teal);
+    text-shadow: -px 0 var(--medium-carmine), 0 1px var(--medium-carmine), 1px 0 var(--medium-carmine);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header h1 span {
+    font-size: 3rem;
+}

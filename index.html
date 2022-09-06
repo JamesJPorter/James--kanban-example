@@ -9,7 +9,33 @@
     <title>James' Kanban Example</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Task Tracker<span>✨</span></h1>
+        <form>
+            <input type="text" name="task-name" placeholder="Enter a task to track">
+            <input type="text" name="task-type" placeholder="Enter the type of task-name">
+            <button type="submit">Add Task</button>
+        </form>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="section-title">Tastk To DO</h2>
+            <ul class="task-list" id="task-to-do"></ul>
+        </section>
+        <section>
+            <h2 class="section-title">Task In Progress</h2>
+            <ul class="task-list" id="task-in-progress"></ul>
+        </section>
+        <section>
+            <h2 class="section-title">Tasks Completed</h2>
+            <ul class="task-list" id="tasks-completed"></ul>
+        </section>
+    </main>
+
+    <footer>
+        Made with 🔥 by the Class of Februray 2023, UCLA Coding Bootcamp
+    </footer>
 
     <script src="./assets/JS/script.js"></script>
 </body>
