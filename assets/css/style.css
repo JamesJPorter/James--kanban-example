@@ -107,3 +107,61 @@ form button {
     background-color: var(--old-burgundy);
     color: var(--steel-teal);
 }
+
+/* styles for the main section */
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+}
+
+h2.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul.task-list {
+    flex: 1;
+    list-style: none;
+    background-color: var(--cream);
+    border: 2px solid var(--old-burgundy);
+    border-radius: var(--br);
+    padding: 1rem 1rem 0 1rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+    main {
+        flex-direction: column;
+    }
+    h2.section-title {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    form input[name="task0-name"] {
+        flex-basis: 100%;
+    }
+    form input[name="task-type"] {
+        flex-basis: 60%;
+        margin-left: none;
+    }
+    form button {
+        flex-basis: calc(40% - 2rem);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+}
