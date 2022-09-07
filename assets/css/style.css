@@ -150,7 +150,7 @@ ul.task-list {
 }
 
 @media screen and (max-width: 900px) {
-    form input[name="task0-name"] {
+    form input[name="task-name"] {
         flex-basis: 100%;
     }
     form input[name="task-type"] {
